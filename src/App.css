@@ -1,38 +1,45 @@
-.App {
+html {
+  background: linear-gradient(45deg,#52575d,#41444b);
+  font-family: 'helvetica neue';
   text-align: center;
+  font-size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  font-size: 2rem;
   display: flex;
-  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.clock-container{
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  background-color: #f6f4e6;
+  border-radius: 100px;
+  border: solid #52575d 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#clockCanvas{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.band{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 90px;
+  height: 550px;
+  background: linear-gradient(85deg, #f6f4e6, #dcd9c6);
+  border-radius: 20px;
+  z-index: -1;
 }
