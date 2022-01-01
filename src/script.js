@@ -1,4 +1,3 @@
-
 let clockCanvas = document.getElementById('clockCanvas');
 let ctx = clockCanvas.getContext('2d');
 let radius = clockCanvas.height/2;
@@ -69,13 +68,13 @@ function drawSec(ctx,ang) {
 }
 
 function drawHand(ctx,ang,width,length,color) {
-    ctx.beginPath();
-    ctx.lineWidth = width;
-    ctx.strokeStyle = color;
-    ctx.moveTo(radius,radius);
-    ctx.lineTo(radius + Math.cos(ang) * length,
-        radius + Math.sin(ang) * length);
-    ctx.stroke();
+    ctx.beginPath();    
+    ctx.lineWidth = width;    
+    ctx.strokeStyle = color;    
+    ctx.moveTo(radius,radius);    
+    ctx.lineTo(radius + Math.cos(ang) * length,    
+        radius + Math.sin(ang) * length);    
+    ctx.stroke();    
 }
 
 

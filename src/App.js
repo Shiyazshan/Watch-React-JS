@@ -1,6 +1,5 @@
 import './App.css';
-import './script'
-
+import './script';
 function App() {
   return (
     <>
